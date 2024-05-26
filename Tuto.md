@@ -63,3 +63,8 @@ The `std` when calling the object of `iostream` is the `namespace`.
 ## User input 
 
 - end of file is `control-d` on UNIX (`control-z` on windows)
+- Instead of manual input/output you can use filed `[executable_name] <[infile]> [outfile]`
+
+## Class
+member functio <> method
+
