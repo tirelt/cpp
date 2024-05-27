@@ -66,7 +66,7 @@ The `std` when calling the object of `iostream` is the `namespace`.
 - Instead of manual input/output you can use filed `[executable_name] <[infile]> [outfile]`
 
 ## Class
-member functio <> method
+member function <> method
 
 # Variables and BAsic Types
 
@@ -124,4 +124,74 @@ To share a const object among multiple files, you must define the variable as `e
 extern const int nameConst = 42;
 // in file 2
 extern cost in nameConst; 
+```
+
+## `constexp`
+
+is an expression whose value cannot change and that can be evaluated at compile time.
+
+## Type Aliases 
+
+```cpp
+typedef double wages; //wages is a synony for double
+using wages = double; //same
+```
+
+## `Auto` type Specifier
+```cpp
+auto j = 1;
+```
+## `decltype` Type Specifier 
+```cpp
+vector<int> myVector{1};
+decltype(myVector.size()) index = 0; //.size() has a type vector<int>::size
+```
+
+## Datastructure
+```cpp
+struct Sales_data { //class
+    std::string bookNo; //class data member
+    unisnged units_sold = 0; //in-class initializer
+    double revenue = 0.0;
+};
+```
+## 
+In main cfile:
+```cpp
+#include "Sales_data.h"
+```
+In `Sales_data.h`:
+we need to use `header guards`, not to import many times the same stuff. For that we use `preprocessor variable`.
+```cpp
+#ifndef SALES_DATA_H //#ifdef 
+#define SALES_DATA_H
+#include <string>
+struct Sales_data {
+std::string bookNo;
+unsigned units_sold = 0;
+double revenue = 0.0;
+};
+#endif
+```
+
+## Namespace `using` Declarations
+To stop specifying `std::`
+```cpp
+using std::cin;
+using std::cout;
+using std::endl;
+```
+## `string`
+A string is a variable-length sequence of characters
+```cpp
+#include <string>
+using std::string;
+```
+
+## `vector`
+A `vector` is a collection of objects, all of which have the same type.
+
+```cpp
+#include <vector>
+using std::vector;
 ```
