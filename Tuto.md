@@ -33,52 +33,40 @@ If you want to specify the name of the executable directly
 ```Bash
 g++ -o [executable_name] [source_name]
 ```
-## Input/Output (IO) standard library: iostream
 
-Two type `istream` for inputs and `ostram` for outputs. The library define 4 OI objects:
-- `cin`: standard input
-- `cout`: standard output
-- `cerr`: standard error
-- `clog`: general information about the execution of the progrom
-
-We manupule then with operators (than can be chained):
-- `<<` output operator. left (ostream) becomes right and return left
-- `>>` input operator. right (istream) become left and return left
-
-and manipulators:
-- `std::endl`: to flush the buffer and make sure that all the ouput is actually written to the ouput stream and not sitting in memory.
-
-
-To import:
+Run program with arguments e.g.
 ```cpp
-#include <iostream>
+int main(int argc, char **argv) { ... }
 ```
-The name between brackets is refered as a header, we include them at the start of the program.
-The `std` when calling the object of `iostream` is the `namespace`.
+run 
+```bash
+/[executable_name] [arg_1] [arg_2] ...
+```
+Example:
+```bsah
+prog -d -o ofile data0
+```
+`argc=5`,  `argv[0] = "prog"`,..., `argv[4] = "data0"`, `argv[5] = 0`
 
-## Comments
-- `//` 1 line comment
-- `/*` & `*/` mutli lines comment
+### Separate compilation 
+
+To compile from a console multiple files
+```Bash
+g++ [file_name_1] [file_name_2] ... -o [executable_name]
+```
+If we change just one file it might be preferable to recompile only this file.  We can seperatly compile files using 
+```Bash
+g++ -c [file_name] 
+```
+It genereates an object file (`.o` estension). Then we can combine object code with 
+```Bash
+g++ [obj_file_1] [obj_file_2 ] ... -o [executable_name]
+```
 
 ## User input 
 
 - end of file is `control-d` on UNIX (`control-z` on windows)
 - Instead of manual input/output you can use filed `[executable_name] <[infile]> [outfile]`
-
-## Class
-member function <> method
-
-# Variables and BAsic Types
-
-## Primitie Built-in Types
-- arithmetic types: `bool`, `char`, `wchar_y`, `char16_t`, `char32_t`, `short`, `int`, `long`, `long long`, `float`, `double`, `long double`
-- `void`
-- `short`, `int`, `long` , `long long` are signed and can be unsigned (e.g. `unsigned int`)
-- in practice 
-1. use `unsigned` if >0
-2. use `int` or `long long` for integers
-3. Use `double` for floating pount computaions. `long double` is slow.
-
 
 C++ is a `statically type language, the compiler `type checks`.
 ## Memory 
@@ -137,24 +125,6 @@ typedef double wages; //wages is a synony for double
 using wages = double; //same
 ```
 
-## `Auto` type Specifier
-```cpp
-auto j = 1;
-```
-## `decltype` Type Specifier 
-```cpp
-vector<int> myVector{1};
-decltype(myVector.size()) index = 0; //.size() has a type vector<int>::size
-```
-
-## Datastructure
-```cpp
-struct Sales_data { //class
-    std::string bookNo; //class data member
-    unisnged units_sold = 0; //in-class initializer
-    double revenue = 0.0;
-};
-```
 ## 
 In main cfile:
 ```cpp
@@ -180,18 +150,4 @@ To stop specifying `std::`
 using std::cin;
 using std::cout;
 using std::endl;
-```
-## `string`
-A string is a variable-length sequence of characters
-```cpp
-#include <string>
-using std::string;
-```
-
-## `vector`
-A `vector` is a collection of objects, all of which have the same type.
-
-```cpp
-#include <vector>
-using std::vector;
 ```
