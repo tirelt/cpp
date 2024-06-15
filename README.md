@@ -1,2 +1,3 @@
-# cpp
-C++ primer
+# CPP
+
+My first steps in C++
