@@ -180,11 +180,10 @@ G6 / survived: %50 / obs %1.96078
 T / survived: %0 / obs %0.490196
  
 stat_embarked: 
-obs: 891 - %100
- / survived: %100 / obs %0.224467
-C / survived: %55.3571 / obs %18.8552
-Q / survived: %38.961 / obs %8.64198
-S / survived: %33.6957 / obs %72.2783
+obs: 889 - %99.7755
+C / survived: %55.3571 / obs %18.8976
+Q / survived: %38.961 / obs %8.66142
+S / survived: %33.6957 / obs %72.4409
  
 stat_age: 
 obs: 714 - %80.1347

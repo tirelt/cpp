@@ -65,11 +65,11 @@ Titanic::Titanic(istream& train){
             stat_cabin[ptr->cabin].first += has_survived;
             stat_cabin[ptr->cabin].second += 1;
         }
+
         if(!(ptr->embarked).empty()){
             stat_embarked[ptr->embarked].first += has_survived;
             stat_embarked[ptr->embarked].second += 1;
         }
-        //cout << p.passengerId <<  p.survived  << p.pClass << p.name <<p.sex <<p.age <<p.sibSp <<p.parch <<p.ticket <<p.fare <<p.cabin <<p.embarked<<endl;
     }
 }
 

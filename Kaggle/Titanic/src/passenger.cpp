@@ -17,13 +17,15 @@ Passenger::Passenger(string& line){
     replace_in_substring(line,start_name,end_name);
     line.erase(start_name,1);
     line.erase(end_name-1,1);
-
+    erase_non_print(line);
     vector<string> values = split_line(line);
 
-    if( values.size() != 12 )
-        throw std::runtime_error("Line doesn't have 12 elements");    
+      
     
     try{
+    if( values.size() != 12 )
+        throw std::runtime_error("Line doesn't have 12 elements");  
+    
     passengerId = values[0].empty()?0:stoi(values[0]);
     survived = values[1].empty()?0:stoi(values[1]);;
     pClass = values[2].empty()?0:stoi(values[2]);;

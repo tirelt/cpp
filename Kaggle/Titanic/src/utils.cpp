@@ -1,6 +1,7 @@
 #include <string>
 #include <vector>
 #include <sstream>
+#include <algorithm>
 
 using std::istringstream;
 using std::vector;
@@ -22,6 +23,19 @@ vector<string> split_line(string& line, const char delimiter = ','){
     istringstream ss(line);
     while(getline(ss,entry,delimiter))
         ret.push_back(entry);
+    if(line.back()==',')
+        ret.push_back(string());
     return ret;
 }
 
+string& erase_non_print(string& line){
+    unsigned i=0;
+    while( i<line.size()){
+        if(std::isprint(line[i])){
+            ++i;
+        } else{
+            line.erase(i,1);
+        }
+    }
+    return line;
+}

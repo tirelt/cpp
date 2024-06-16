@@ -21,10 +21,7 @@ int main(){
     //Passenger p = t.get(1);
     //p.print();
 
-    cout << "Obs: " << t.passengers.size() << "\n"<< endl;
-
-    
-
+    cout << "Obs: " << t.passengers.size() << endl;
     
     //Sex
     out << "stat_sex: " << endl;
