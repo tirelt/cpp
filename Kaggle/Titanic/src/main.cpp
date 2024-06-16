@@ -17,7 +17,7 @@ int main(){
     //p.print();
     //cout << p.passengerId <<  p.survived  << p.pClass << p.name <<p.sex <<p.age <<p.sibSp <<p.parch <<p.ticket <<p.fare <<p.cabin <<p.embarked<<endl;
     for(auto p: t.stat_sex){
-        cout<< "sex: " << p.first << " / survived: "<< p.second.first << " / total: "<< p.second.second << " / porba: " << double(p.second.first)/p.second.second << endl;
+        cout<< "sex: " << p.first << " / survived: "<< p.second.first << " / total: "<< p.second.second << " / proba: " << double(p.second.first)/p.second.second << endl;
     }
     return 0;
 }

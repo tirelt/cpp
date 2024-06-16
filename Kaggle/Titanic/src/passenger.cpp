@@ -23,18 +23,23 @@ Passenger::Passenger(string& line){
     if( values.size() != 12 )
         throw std::runtime_error("Line doesn't have 12 elements");    
     
-    passengerId = stoi(values[0]);
-    survived = stoi(values[1]);
-    pClass = stoi(values[2]);
+    try{
+    passengerId = values[0].empty()?0:stoi(values[0]);
+    survived = values[1].empty()?0:stoi(values[1]);;
+    pClass = values[2].empty()?0:stoi(values[2]);;
     fullName = values[3];
     sex = values[4];
-    age = stoi(values[5]);
-    sibSp = stoi(values[6]);
-    parch = stoi(values[7]);
+    age = values[5].empty()?0:stoi(values[5]);;
+    sibSp = values[6].empty()?0:stoi(values[6]);;
+    parch = values[7].empty()?0:stoi(values[7]);;
     ticket = values[8];
-    fare = stod(values[9]);
+    fare = values[9].empty()?0:stod(values[9]);;
     cabin = values[10];
     embarked = values[11];
+    } catch(...) {
+        cout << line << endl;
+        throw;
+    }
 };
 
 void Passenger::print(){
