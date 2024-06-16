@@ -1,5 +1,9 @@
 #include <string>
+#include <vector>
+#include <sstream>
 
+using std::istringstream;
+using std::vector;
 using std::string;
 
 string& replace_in_substring(string& s,unsigned pos1,unsigned pos2, const char old_c = ',', const char new_c = '-'){  
@@ -10,4 +14,13 @@ string& replace_in_substring(string& s,unsigned pos1,unsigned pos2, const char o
         }
     }
     return s;
+}
+
+vector<string> split_line(string& line, const char delimiter = ','){  
+    vector<string> ret;
+    string entry;
+    istringstream ss(line);
+    while(getline(ss,entry,delimiter))
+        ret.push_back(entry);
+    return ret;
 }

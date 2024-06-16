@@ -12,14 +12,14 @@ class Passenger{
         //template<typename T> void set(Features f, T value);      
     
     public:
-        Passenger();
-        Passenger(const Passenger&);
-        //Passenger(Passenger&&);
+        //Passenger();
+        Passenger(std::string&);
+        void print();
 
         unsigned passengerId;
         bool survived;
         unsigned pClass;
-        std::string name;
+        std::string fullName;
         std::string sex;
         unsigned age;
         unsigned sibSp;
