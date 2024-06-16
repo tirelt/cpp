@@ -2,3 +2,5 @@ numpy
 pandas
 jupyter
 matplotlib
+scikit-learn
+graphviz
