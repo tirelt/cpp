@@ -29,7 +29,7 @@ Passenger::Passenger(string& line){
     pClass = values[2].empty()?0:stoi(values[2]);;
     fullName = values[3];
     sex = values[4];
-    age = values[5].empty()?0:stoi(values[5]);;
+    age = values[5].empty()?0:stod(values[5]);;
     sibSp = values[6].empty()?0:stoi(values[6]);;
     parch = values[7].empty()?0:stoi(values[7]);;
     ticket = values[8];

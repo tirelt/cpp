@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <map>
 
 #include "utils.h"
 #include "passenger.h"
@@ -8,16 +9,44 @@
 using std::cout;
 using std::endl;
 using std::ifstream;
+using std::ofstream;
+using std::map;
+
 
 int main(){
     //ifstream train("data/train_test.csv");
     ifstream train("data/train.csv");
     Titanic t(train);
+    ofstream out("stats/stats");
     //Passenger p = t.get(1);
     //p.print();
-    //cout << p.passengerId <<  p.survived  << p.pClass << p.name <<p.sex <<p.age <<p.sibSp <<p.parch <<p.ticket <<p.fare <<p.cabin <<p.embarked<<endl;
-    for(auto p: t.stat_sex){
-        cout<< "sex: " << p.first << " / survived: "<< p.second.first << " / total: "<< p.second.second << " / proba: " << double(p.second.first)/p.second.second << endl;
-    }
+
+    cout << "Obs: " << t.passengers.size() << "\n"<< endl;
+
+    
+
+    
+    //Sex
+    out << "stat_sex: " << endl;
+    t.show_stat(t.stat_sex,out);
+    out << " " << endl;
+    out << "stat_pClass: " << endl;
+    t.show_stat(t.stat_pClass,out);
+    out << " " << endl;
+    out << "stat_sibSp: " << endl;
+    t.show_stat(t.stat_sibSp,out);
+    out << " " << endl;
+    out << "stat_parch: " << endl;
+    t.show_stat(t.stat_parch,out);
+    out << " " << endl;
+    out << "stat_cabin: " << endl;
+    t.show_stat(t.stat_cabin,out);
+    out << " " << endl;
+    out << "stat_embarked: " << endl;
+    t.show_stat(t.stat_embarked,out);
+    out << " " << endl;
+    out << "stat_age: " << endl;
+    t.show_stat(t.stat_age,out);
+    out << " " << endl;
     return 0;
 }

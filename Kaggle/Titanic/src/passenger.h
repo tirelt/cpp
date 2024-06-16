@@ -21,7 +21,7 @@ class Passenger{
         unsigned pClass;
         std::string fullName;
         std::string sex;
-        unsigned age;
+        double age;
         unsigned sibSp;
         unsigned parch;
         std::string ticket;

@@ -1,0 +1,279 @@
+stat_sex: 
+obs: 891 - %100
+female / survived: %74.2038 / obs %35.2413
+male / survived: %18.8908 / obs %64.7587
+ 
+stat_pClass: 
+obs: 891 - %100
+1 / survived: %62.963 / obs %24.2424
+2 / survived: %47.2826 / obs %20.651
+3 / survived: %24.2363 / obs %55.1066
+ 
+stat_sibSp: 
+obs: 891 - %100
+0 / survived: %34.5395 / obs %68.2379
+1 / survived: %53.5885 / obs %23.4568
+2 / survived: %46.4286 / obs %3.14254
+3 / survived: %25 / obs %1.79574
+4 / survived: %16.6667 / obs %2.0202
+5 / survived: %0 / obs %0.561167
+8 / survived: %0 / obs %0.785634
+ 
+stat_parch: 
+obs: 891 - %100
+0 / survived: %34.3658 / obs %76.0943
+1 / survived: %55.0847 / obs %13.2435
+2 / survived: %50 / obs %8.97868
+3 / survived: %60 / obs %0.561167
+4 / survived: %0 / obs %0.448934
+5 / survived: %20 / obs %0.561167
+6 / survived: %0 / obs %0.112233
+ 
+stat_cabin: 
+obs: 204 - %22.8956
+A10 / survived: %0 / obs %0.490196
+A14 / survived: %0 / obs %0.490196
+A16 / survived: %100 / obs %0.490196
+A19 / survived: %0 / obs %0.490196
+A20 / survived: %100 / obs %0.490196
+A23 / survived: %100 / obs %0.490196
+A24 / survived: %0 / obs %0.490196
+A26 / survived: %100 / obs %0.490196
+A31 / survived: %100 / obs %0.490196
+A32 / survived: %0 / obs %0.490196
+A34 / survived: %100 / obs %0.490196
+A36 / survived: %0 / obs %0.490196
+A5 / survived: %0 / obs %0.490196
+A6 / survived: %100 / obs %0.490196
+A7 / survived: %0 / obs %0.490196
+B101 / survived: %100 / obs %0.490196
+B102 / survived: %0 / obs %0.490196
+B18 / survived: %100 / obs %0.980392
+B19 / survived: %0 / obs %0.490196
+B20 / survived: %100 / obs %0.980392
+B22 / survived: %50 / obs %0.980392
+B28 / survived: %100 / obs %0.980392
+B3 / survived: %100 / obs %0.490196
+B30 / survived: %0 / obs %0.490196
+B35 / survived: %100 / obs %0.980392
+B37 / survived: %0 / obs %0.490196
+B38 / survived: %0 / obs %0.490196
+B39 / survived: %100 / obs %0.490196
+B4 / survived: %100 / obs %0.490196
+B41 / survived: %100 / obs %0.490196
+B42 / survived: %100 / obs %0.490196
+B49 / survived: %100 / obs %0.980392
+B5 / survived: %100 / obs %0.980392
+B50 / survived: %100 / obs %0.490196
+B51 B53 B55 / survived: %50 / obs %0.980392
+B57 B59 B63 B66 / survived: %100 / obs %0.980392
+B58 B60 / survived: %50 / obs %0.980392
+B69 / survived: %100 / obs %0.490196
+B71 / survived: %0 / obs %0.490196
+B73 / survived: %100 / obs %0.490196
+B77 / survived: %100 / obs %0.980392
+B78 / survived: %100 / obs %0.490196
+B79 / survived: %100 / obs %0.490196
+B80 / survived: %100 / obs %0.490196
+B82 B84 / survived: %0 / obs %0.490196
+B86 / survived: %0 / obs %0.490196
+B94 / survived: %0 / obs %0.490196
+B96 B98 / survived: %100 / obs %1.96078
+C101 / survived: %100 / obs %0.490196
+C103 / survived: %100 / obs %0.490196
+C104 / survived: %100 / obs %0.490196
+C106 / survived: %100 / obs %0.490196
+C110 / survived: %0 / obs %0.490196
+C111 / survived: %0 / obs %0.490196
+C118 / survived: %0 / obs %0.490196
+C123 / survived: %50 / obs %0.980392
+C124 / survived: %0 / obs %0.980392
+C125 / survived: %100 / obs %0.980392
+C126 / survived: %100 / obs %0.980392
+C128 / survived: %0 / obs %0.490196
+C148 / survived: %100 / obs %0.490196
+C2 / survived: %50 / obs %0.980392
+C22 C26 / survived: %33.3333 / obs %1.47059
+C23 C25 C27 / survived: %50 / obs %1.96078
+C30 / survived: %0 / obs %0.490196
+C32 / survived: %100 / obs %0.490196
+C45 / survived: %100 / obs %0.490196
+C46 / survived: %0 / obs %0.490196
+C47 / survived: %100 / obs %0.490196
+C49 / survived: %0 / obs %0.490196
+C50 / survived: %100 / obs %0.490196
+C52 / survived: %100 / obs %0.980392
+C54 / survived: %100 / obs %0.490196
+C62 C64 / survived: %100 / obs %0.490196
+C65 / survived: %50 / obs %0.980392
+C68 / survived: %50 / obs %0.980392
+C7 / survived: %100 / obs %0.490196
+C70 / survived: %100 / obs %0.490196
+C78 / survived: %50 / obs %0.980392
+C82 / survived: %0 / obs %0.490196
+C83 / survived: %50 / obs %0.980392
+C85 / survived: %100 / obs %0.490196
+C86 / survived: %0 / obs %0.490196
+C87 / survived: %0 / obs %0.490196
+C90 / survived: %100 / obs %0.490196
+C91 / survived: %0 / obs %0.490196
+C92 / survived: %100 / obs %0.980392
+C93 / survived: %100 / obs %0.980392
+C95 / survived: %0 / obs %0.490196
+C99 / survived: %100 / obs %0.490196
+D / survived: %66.6667 / obs %1.47059
+D10 D12 / survived: %100 / obs %0.490196
+D11 / survived: %100 / obs %0.490196
+D15 / survived: %100 / obs %0.490196
+D17 / survived: %100 / obs %0.980392
+D19 / survived: %100 / obs %0.490196
+D20 / survived: %100 / obs %0.980392
+D21 / survived: %100 / obs %0.490196
+D26 / survived: %0 / obs %0.980392
+D28 / survived: %100 / obs %0.490196
+D30 / survived: %0 / obs %0.490196
+D33 / survived: %100 / obs %0.980392
+D35 / survived: %100 / obs %0.980392
+D36 / survived: %100 / obs %0.980392
+D37 / survived: %100 / obs %0.490196
+D45 / survived: %100 / obs %0.490196
+D46 / survived: %0 / obs %0.490196
+D47 / survived: %100 / obs %0.490196
+D48 / survived: %0 / obs %0.490196
+D49 / survived: %100 / obs %0.490196
+D50 / survived: %0 / obs %0.490196
+D56 / survived: %100 / obs %0.490196
+D6 / survived: %0 / obs %0.490196
+D7 / survived: %100 / obs %0.490196
+D9 / survived: %100 / obs %0.490196
+E10 / survived: %100 / obs %0.490196
+E101 / survived: %100 / obs %1.47059
+E12 / survived: %100 / obs %0.490196
+E121 / survived: %100 / obs %0.980392
+E17 / survived: %100 / obs %0.490196
+E24 / survived: %100 / obs %0.980392
+E25 / survived: %100 / obs %0.980392
+E31 / survived: %0 / obs %0.490196
+E33 / survived: %100 / obs %0.980392
+E34 / survived: %100 / obs %0.490196
+E36 / survived: %100 / obs %0.490196
+E38 / survived: %0 / obs %0.490196
+E40 / survived: %100 / obs %0.490196
+E44 / survived: %50 / obs %0.980392
+E46 / survived: %0 / obs %0.490196
+E49 / survived: %100 / obs %0.490196
+E50 / survived: %100 / obs %0.490196
+E58 / survived: %0 / obs %0.490196
+E63 / survived: %0 / obs %0.490196
+E67 / survived: %50 / obs %0.980392
+E68 / survived: %100 / obs %0.490196
+E77 / survived: %0 / obs %0.490196
+E8 / survived: %100 / obs %0.980392
+F E69 / survived: %100 / obs %0.490196
+F G63 / survived: %0 / obs %0.490196
+F G73 / survived: %0 / obs %0.980392
+F2 / survived: %66.6667 / obs %1.47059
+F33 / survived: %100 / obs %1.47059
+F38 / survived: %0 / obs %0.490196
+F4 / survived: %100 / obs %0.980392
+G6 / survived: %50 / obs %1.96078
+T / survived: %0 / obs %0.490196
+ 
+stat_embarked: 
+obs: 891 - %100
+ / survived: %100 / obs %0.224467
+C / survived: %55.3571 / obs %18.8552
+Q / survived: %38.961 / obs %8.64198
+S / survived: %33.6957 / obs %72.2783
+ 
+stat_age: 
+obs: 714 - %80.1347
+0.42 / survived: %100 / obs %0.140056
+0.67 / survived: %100 / obs %0.140056
+0.75 / survived: %100 / obs %0.280112
+0.83 / survived: %100 / obs %0.280112
+0.92 / survived: %100 / obs %0.140056
+1 / survived: %71.4286 / obs %0.980392
+2 / survived: %30 / obs %1.40056
+3 / survived: %83.3333 / obs %0.840336
+4 / survived: %70 / obs %1.40056
+5 / survived: %100 / obs %0.560224
+6 / survived: %66.6667 / obs %0.420168
+7 / survived: %33.3333 / obs %0.420168
+8 / survived: %50 / obs %0.560224
+9 / survived: %25 / obs %1.12045
+10 / survived: %0 / obs %0.280112
+11 / survived: %25 / obs %0.560224
+12 / survived: %100 / obs %0.140056
+13 / survived: %100 / obs %0.280112
+14 / survived: %50 / obs %0.840336
+14.5 / survived: %0 / obs %0.140056
+15 / survived: %80 / obs %0.70028
+16 / survived: %35.2941 / obs %2.38095
+17 / survived: %46.1538 / obs %1.82073
+18 / survived: %34.6154 / obs %3.64146
+19 / survived: %36 / obs %3.5014
+20 / survived: %20 / obs %2.10084
+20.5 / survived: %0 / obs %0.140056
+21 / survived: %20.8333 / obs %3.36134
+22 / survived: %40.7407 / obs %3.78151
+23 / survived: %33.3333 / obs %2.10084
+23.5 / survived: %0 / obs %0.140056
+24 / survived: %50 / obs %4.20168
+24.5 / survived: %0 / obs %0.140056
+25 / survived: %26.087 / obs %3.22129
+26 / survived: %33.3333 / obs %2.52101
+27 / survived: %61.1111 / obs %2.52101
+28 / survived: %28 / obs %3.5014
+28.5 / survived: %0 / obs %0.280112
+29 / survived: %40 / obs %2.80112
+30 / survived: %40 / obs %3.5014
+30.5 / survived: %0 / obs %0.280112
+31 / survived: %47.0588 / obs %2.38095
+32 / survived: %50 / obs %2.52101
+32.5 / survived: %50 / obs %0.280112
+33 / survived: %40 / obs %2.10084
+34 / survived: %40 / obs %2.10084
+34.5 / survived: %0 / obs %0.140056
+35 / survived: %61.1111 / obs %2.52101
+36 / survived: %50 / obs %3.08123
+36.5 / survived: %0 / obs %0.140056
+37 / survived: %16.6667 / obs %0.840336
+38 / survived: %45.4545 / obs %1.54062
+39 / survived: %35.7143 / obs %1.96078
+40 / survived: %46.1538 / obs %1.82073
+40.5 / survived: %0 / obs %0.280112
+41 / survived: %33.3333 / obs %0.840336
+42 / survived: %46.1538 / obs %1.82073
+43 / survived: %20 / obs %0.70028
+44 / survived: %33.3333 / obs %1.2605
+45 / survived: %41.6667 / obs %1.68067
+45.5 / survived: %0 / obs %0.280112
+46 / survived: %0 / obs %0.420168
+47 / survived: %11.1111 / obs %1.2605
+48 / survived: %66.6667 / obs %1.2605
+49 / survived: %66.6667 / obs %0.840336
+50 / survived: %50 / obs %1.40056
+51 / survived: %28.5714 / obs %0.980392
+52 / survived: %50 / obs %0.840336
+53 / survived: %100 / obs %0.140056
+54 / survived: %37.5 / obs %1.12045
+55 / survived: %50 / obs %0.280112
+55.5 / survived: %0 / obs %0.140056
+56 / survived: %50 / obs %0.560224
+57 / survived: %0 / obs %0.280112
+58 / survived: %60 / obs %0.70028
+59 / survived: %0 / obs %0.280112
+60 / survived: %50 / obs %0.560224
+61 / survived: %0 / obs %0.420168
+62 / survived: %50 / obs %0.560224
+63 / survived: %100 / obs %0.280112
+64 / survived: %0 / obs %0.280112
+65 / survived: %0 / obs %0.420168
+66 / survived: %0 / obs %0.140056
+70 / survived: %0 / obs %0.280112
+70.5 / survived: %0 / obs %0.140056
+71 / survived: %0 / obs %0.280112
+74 / survived: %0 / obs %0.140056
+80 / survived: %100 / obs %0.140056
+ 
