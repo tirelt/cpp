@@ -171,3 +171,5 @@ log/*
 mangas/*/chapters
 
 mangas/*/PDFs
+
+.vscode
