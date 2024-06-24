@@ -105,3 +105,8 @@ https://man7.org/linux/man-pages/man1/g++.1.html
 
 https://stackoverflow.com/questions/33662375/how-can-you-compile-all-cpp-files-in-a-directory
 
+## Makefile
+
+https://www.softwaretestinghelp.com/cpp-makefile-tutorial/
+https://earthly.dev/blog/cmake-vs-make-diff/#:~:text=In%20summary%3A%20The%20difference%20between,used%20to%20create%20a%20Makefile.
+https://opensource.com/article/18/8/what-how-makefile
