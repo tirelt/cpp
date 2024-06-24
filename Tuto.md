@@ -67,3 +67,41 @@ g++ [obj_file_1] [obj_file_2 ] ... -o [executable_name]
 - end of file is `control-d` on UNIX (`control-z` on windows)
 - Instead of manual input/output you can use filed `[executable_name] <[infile]> [outfile]`
 
+# Useful doc
+
+## Structure project:
+
+https://medium.com/swlh/c-project-structure-for-cmake-67d60135f6f5
+
+https://slaptijack.com/programming/project-structure-for-cpp.html
+
+ 
+
+## CMAKE:
+
+https://code.visualstudio.com/docs/cpp/CMake-linux
+
+https://cmake.org/
+
+https://cliutils.gitlab.io/modern-cmake/
+
+ 
+
+## How to use libraries:
+
+https://stackoverflow.com/questions/10358745/how-to-use-libraries
+
+https://cplusplus.com/forum/beginner/269130/
+
+https://stackoverflow.com/questions/30064686/making-and-compiling-c-projects-with-multiple-files
+
+https://stackoverflow.com/questions/74742297/linking-external-libraries-in-c-in-visual-studio-code
+
+ 
+
+## g++
+
+https://man7.org/linux/man-pages/man1/g++.1.html
+
+https://stackoverflow.com/questions/33662375/how-can-you-compile-all-cpp-files-in-a-directory
+
