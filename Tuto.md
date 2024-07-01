@@ -123,6 +123,8 @@ In `.vscode/launch.json` add the below to `configurations=[]`:
 
 You can find all VScode variable reference [here](https://code.visualstudio.com/docs/editor/variables-reference).
 
+To run the task `Ctrl+Shift+P` to open the command palette, select `Tasks: Run Task` and inf the name of your task ("run the makefile debug" in opur example).
+
 # Useful doc
 
 ## Structure project:
