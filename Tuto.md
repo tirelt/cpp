@@ -79,8 +79,49 @@ We created an interesting example of project using `Makefile` in `testing/makefi
 
 # Debug
 
-We will use vscode and `gdb` to contruct a C++ debbuging environnement/
-  
+An exmaple on how to manually use `gdb` to debug can be found [here](https://www.bitdegree.org/learn/gdb-debugger).
+
+We prefer to use VScode to debug, we follow [How to Set up C++ Debugging in VSCode Using a Makefile](https://hackernoon.com/how-to-set-up-c-debugging-in-vscode-using-a-makefile) and [Using C++ on Linux in VS Code](https://code.visualstudio.com/docs/cpp/config-linux) to build our C++ debbuging environnement. For this, we will create a task and launch configuration in `.vscode/tasks.json` & `.vscode/launch.json`.
+
+In `.vscode/tasks.json` add the below to `tasks=[]`:
+```json
+{
+    "type": "cppbuild",
+    "label": "run the makefile debug",
+    "command": "make",
+    "args": ["helloworld"],
+    "options": {
+        "cwd": "${cwd}/testing/debug"
+    },
+    "detail": "Build Testing/Debug"
+}
+```
+In `.vscode/launch.json` add the below to `configurations=[]`:
+```json
+{
+    "name": "Debug test",
+    "type": "cppdbg",
+    "request": "launch",
+    "program": "${cwd}/testing/debug/helloworld",
+    "args": [],
+    "stopAtEntry": false,
+    "cwd": "${cwd}/testing/debug",
+    "environment": [],
+    "externalConsole": false,
+    "MIMode": "gdb",
+    "miDebuggerPath": "/usr/bin/gdb",
+    "setupCommands": [
+        {
+        "description": "Enable pretty-printing for gdb",
+        "text": "-enable-pretty-printing",
+        "ignoreFailures": true
+        }
+    ],
+    "preLaunchTask": "run the makefile debug"
+}
+```
+
+You can find all VScode variable reference [here](https://code.visualstudio.com/docs/editor/variables-reference).
 
 # Useful doc
 

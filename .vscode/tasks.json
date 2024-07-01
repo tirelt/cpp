@@ -29,7 +29,7 @@
             "command": "make",
             "args": ["helloworld"],
             "options": {
-                "cwd": "~/Projects/cpp/testing/debug"
+                "cwd": "${cwd}/testing/debug"
             },
             "detail": "Build Testing/Debug"
         }
