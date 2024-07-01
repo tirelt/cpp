@@ -79,7 +79,8 @@ We created an interesting example of project using `Makefile` in `testing/makefi
 
 # Debug
 
-
+We will use vscode and `gdb` to contruct a C++ debbuging environnement/
+  
 
 # Useful doc
 

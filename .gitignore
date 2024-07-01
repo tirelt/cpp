@@ -31,7 +31,6 @@
 *.out
 *.app
 
-.vscode
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -171,5 +170,3 @@ log/*
 mangas/*/chapters
 
 mangas/*/PDFs
-
-.vscode
