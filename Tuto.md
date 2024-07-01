@@ -67,6 +67,20 @@ g++ [obj_file_1] [obj_file_2 ] ... -o [executable_name]
 - end of file is `control-d` on UNIX (`control-z` on windows)
 - Instead of manual input/output you can use filed `[executable_name] <[infile]> [outfile]`
 
+# Makefile
+
+For large project it is often prefereble to use a tool to help us compile. The industry standard is [CMake](https://cmake.org/) which is cross plateform. It doesn't actually compile. Instead it calls `Makefile` to do the heavy lifting [c.f.](https://earthly.dev/blog/cmake-vs-make-diff/#:~:text=In%20summary%3A%20The%20difference%20between,used%20to%20create%20a%20Makefile).
+
+We created an interesting example of project using `Makefile` in `testing/makefile`. It shows how to use libraries, to only re-compile modified source or hearder files and to link everything together.
+
+- [source material](https://opensource.com/article/18/8/what-how-makefile)
+- [how to use libraries example](https://stackoverflow.com/questions/10358745/how-to-use-libraries)
+
+
+# Debug
+
+
+
 # Useful doc
 
 ## Structure project:

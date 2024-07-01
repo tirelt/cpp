@@ -1,4 +1,3 @@
-.PHONY = create_objects
 CXX=g++
 PATH_SRC=src
 PATH_LIB1=src/lib1
@@ -7,7 +6,6 @@ PATH_INLUCE=include
 TARGET=MyApp
 
 SRCS := $(wildcard $(PATH_SRC)/*.cpp)
-BINS := $(SRCS:%.cpp=%)
 OBJS := $(SRCS:%cpp=%o)
 
 all:$(PATH_LIB1)/lib1.a $(PATH_LIB2)/lib2.so $(TARGET)
