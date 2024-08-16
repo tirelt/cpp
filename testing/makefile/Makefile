@@ -8,7 +8,7 @@ TARGET=MyApp
 SRCS := $(wildcard $(PATH_SRC)/*.cpp)
 OBJS := $(SRCS:%cpp=%o)
 
-all:$(PATH_LIB1)/lib1.a $(PATH_LIB2)/lib2.so $(TARGET)
+all: $(PATH_LIB1)/lib1.a $(PATH_LIB2)/lib2.so $(TARGET)
 
 $(TARGET): ${OBJS}
 	${CXX} ${OBJS} $(PATH_LIB1)/lib1.a $(PATH_LIB2)/lib2.so -o $@
@@ -24,4 +24,5 @@ $(PATH_LIB2)/lib2.so:$(PATH_LIB2)/*.cpp
 	$(CXX) -fPIC -c $(PATH_LIB2)/lib2.cpp -I $(PATH_INLUCE) -o $(PATH_LIB2)/lib2.o
 	$(CXX) -shared -o $(PATH_LIB2)/lib2.so $(PATH_LIB2)/lib2.o
 
-
+run:
+	./$(TARGET)
