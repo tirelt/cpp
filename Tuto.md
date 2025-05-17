@@ -79,9 +79,47 @@ We created an interesting example of project using `Makefile` in `testing/makefi
 
 # Debug
 
-An exmaple on how to manually use `gdb` to debug can be found [here](https://www.bitdegree.org/learn/gdb-debugger).
+## In terminal
 
-We prefer to use VScode to debug, we follow [How to Set up C++ Debugging in VSCode Using a Makefile](https://hackernoon.com/how-to-set-up-c-debugging-in-vscode-using-a-makefile) and [Using C++ on Linux in VS Code](https://code.visualstudio.com/docs/cpp/config-linux) to build our C++ debbuging environnement. For this, we will create a task and launch configuration in `.vscode/tasks.json` & `.vscode/launch.json`.
+An example on how to manually use `gdb` to debug can be found [here](https://www.bitdegree.org/learn/gdb-debugger).
+```Bash
+g++ -g -o myprogram myprogram.cpp # -g debug flag
+gdb ./myprogram
+run 
+break <location> # function name, myprogram.cpp:line, can put a condition e.g. if x == 10
+info breakpoints # i b, to list the breakpoints
+delete <breakpoint number> # d , to remove a break
+print <variable>
+display <variable> # to continuously display a value
+i display 
+undisplay 
+watch <variable> # pauses when x changes 
+
+s # step, steps into functions
+n # next, steps over functions
+continue # resume until next break
+finish # run until the current function returns
+quit
+gdb --pid <process-id> # to attach to a running process
+
+disassemble main # to see assembly code, /s /m to check vs src code
+
+frame # show current line
+list # show lines around current position, can show function
+
+backtrace # shows the stack trace
+up # to move up the stack
+down # to move down the stack
+set variable x=10
+
+set logging on/off
+
+call myFunction(10, 20)
+```
+
+
+## With VSCode
+We follow [How to Set up C++ Debugging in VSCode Using a Makefile](https://hackernoon.com/how-to-set-up-c-debugging-in-vscode-using-a-makefile) and [Using C++ on Linux in VS Code](https://code.visualstudio.com/docs/cpp/config-linux) to build our C++ debbuging environnement. For this, we will create a task and launch configuration in `.vscode/tasks.json` & `.vscode/launch.json`.
 
 In `.vscode/tasks.json` add the below to `tasks=[]`:
 ```json
