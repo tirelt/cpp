@@ -76,6 +76,9 @@ We created an interesting example of project using `Makefile` in `testing/makefi
 - [source material](https://opensource.com/article/18/8/what-how-makefile)
 - [how to use libraries example](https://stackoverflow.com/questions/10358745/how-to-use-libraries)
 
+# Bazel
+[Common C++ Build Use Cases](https://bazel.build/tutorials/cpp-use-cases)
+[C / C++ Rules](https://bazel.build/reference/be/c-cpp#cc_library)
 
 # Debug
 
@@ -117,6 +120,7 @@ set logging on/off
 call myFunction(10, 20)
 ```
 
+![alt text](img/lldb.png)
 
 ## With VSCode
 We follow [How to Set up C++ Debugging in VSCode Using a Makefile](https://hackernoon.com/how-to-set-up-c-debugging-in-vscode-using-a-makefile) and [Using C++ on Linux in VS Code](https://code.visualstudio.com/docs/cpp/config-linux) to build our C++ debbuging environnement. For this, we will create a task and launch configuration in `.vscode/tasks.json` & `.vscode/launch.json`.
