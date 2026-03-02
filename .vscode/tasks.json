@@ -27,7 +27,7 @@
             "type": "cppbuild",
             "label": "run the makefile debug",
             "command": "make",
-            "args": ["helloworld"],
+            "args": ["main"],
             "options": {
                 "cwd": "${cwd}/testing/debug"
             },

@@ -167,6 +167,21 @@ You can find all VScode variable reference [here](https://code.visualstudio.com/
 
 To run the task `Ctrl+Shift+P` to open the command palette, select `Tasks: Run Task` and inf the name of your task ("run the makefile debug" in opur example).
 
+### MacOS
+On MacOS we use `lldb` instead of `cppdbg`.
+
+The consif below suffises:
+```json
+{
+    "name": "Debug test",
+    "type": "lldb",
+    "request": "launch",
+    "program": "${cwd}/testing/debug/main",
+    "args": [],
+    "cwd": "${cwd}",
+    "preLaunchTask": "run the makefile debug"
+}
+```
 # Useful doc
 
 ## Structure project:

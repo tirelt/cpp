@@ -1,11 +1,11 @@
 CXX=g++
-TARGET=helloworld
+TARGET=main
 
-$(TARGET): utils.cpp helloworld.cpp utils.h
-	$(CXX) -fdiagnostics-color=always -g utils.cpp helloworld.cpp -I. -o $(TARGET)
+$(TARGET): utils.cpp main.cpp utils.h
+	$(CXX) -fdiagnostics-color=always -g utils.cpp main.cpp -I. -o $(TARGET)
 
 run:
-	./helloworld
+	./main
 
 clean: 
 	rm -f $(TARGET)
